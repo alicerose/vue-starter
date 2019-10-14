@@ -1,0 +1,24 @@
+// screensize
+$sm: 375;
+$md: 640;
+$lg: 1024;
+$xl: 1280;
+$breakpoint: 768;
+
+// fontfamily
+$fontfamily: 'Roboto', -apple-system, "Helvetica Neue", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+
+// z-map
+$z-map: (
+  header,
+  footer
+);
+
+$dark1: #555555;
+$dark2: #5c5b5b;
+$dark3: #929292;
+$light1: #dbdedd;
+$light2: rgba(142, 142, 142, 0.2);
+$fontmd: calc(12 / 16 * 1rem);
+$fontlg: calc(24 / 16 * 1rem);
+$margin: 14px;
