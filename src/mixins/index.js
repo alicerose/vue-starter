@@ -7,7 +7,7 @@ import store from '@/store';
  * @returns {string}
  */
 export const setTitle = pathTitle => {
-  const siteTitle = 'WebPage';
+  const siteTitle = process.env.VUE_APP_SITE_TITLE;
   const pageTitle = !pathTitle ? siteTitle : pathTitle + ' | ' + siteTitle;
   return (window.document.title = pageTitle);
 };
@@ -17,7 +17,7 @@ export const setTitle = pathTitle => {
  * @param pathMeta
  */
 export const setDescription = pathMeta => {
-  const defaultDescription = 'This is initial description.';
+  const defaultDescription = process.env.VUE_APP_DEFAULT_DESCRIPTION;
   const description = pathMeta ? pathMeta : defaultDescription;
   document
     .querySelector("meta[name='description']")
